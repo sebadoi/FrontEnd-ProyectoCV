@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Curriculum Vitae Meghan Horton</title>
+</head>
+<body>
+    <script src="JavaCV.js"></script>
+    <!-- no contará con header ni footer, etc. ya que no tiene el formato típico de una página web -->
+<div class= "contenedor">
+    <div class="margen_izquierdo">
+        <div class="presentacion">
+            <img id="foto" onmouseenter="agrandarFoto" src="https://randomuser.me/api/portraits/women/55.jpg" alt="Foto de CV">
+        </div>
+        <div class="sobre_mi">
+            <h2 id="titulo1">Sobre mi</h2>
+            <p>Me considero una persona con mucha creatividad y con capacidad para resolver problemas.</p>
+            <p>Soy proactiva, responsable y me gusta trabajar en equipo.</p>
+        </div>
+        <div class="redes_sociales">
+            <h2 id="titulo2">Redes sociales</h2>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></i></span>
+                    <a class= "text" href="http://facebook.com/MeganHorton"> /MeghanHorton </a>
+                    
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></i></span>
+                    <a class= "text" href="http://instagram.com/MeganHorton"> @MeghanHorton </a>
+                    
+                </li>
+                <li>
+                    <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></i></span>
+                    <a class= "text" href="http://instagram.com/MeganHorton"> /Meghan-Horton-013241116</a>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="idiomas">
+            <h2 id="titulo3">Idiomas</h2>
+            <ul>
+                <li>
+                    <div class="progress">
+                        <p id="idioma">Español</p>
+                        <div class="progress-bar" style="width:100%;"></div>
+                    </div>
+                 
+                </li>
+                <li>
+                    <div class="progress">
+                        <p id="idioma">Inglés</p>
+                        <div class="progress-bar" style="width:60%;"></div>
+                            
+                </li>
+                <li>
+                    <div class="progress">
+                        <p id="idioma">Portugués</p>
+                        <div class="progress-bar" style="width:50%;">
+                    </div>
+        
+                </li>  
+                </ul>
+            
+        </div>
+        
+    </div>
+    <div class="margen_derecho">
+        <div class="bloque_sup">
+            <div class="bloque_sup_izq">
+                <h1 id="nombre">Meghan Horton</h1>
+                <h2>Programadora</h2>
+            </div>
+            <div class="bloque_sup_der">
+                <div class="datos">
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <a class= "text" href="https://www.google.com/maps/place/Castle+of+Zafra/@38.4241425,-6.8355128,10z/data=!3m1!5s0xd11558f94606da9:0x15aebd16c8b28974!4m9!1m2!2m1!1szafra+castillo!3m5!1s0xd11558f91494bb7:0x3e3e78794ff55241!8m2!3d38.4241559!4d-6.4169601!15sCg56YWZyYSBjYXN0aWxsb5IBBmNhc3RsZeABAA"> 19360 C. de Dueñas, Guadalajara, Spain </a>
+                            <!-- es una dirección ficticia -->
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                            <span class="text">2/7/1951</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <a class= "text" href="https://api.whatsapp.com/send?phone=2307772865"> (230) 777-2865</a>
+                            <!-- te envía a Whatsapp web de un número telefónico ficticio -->
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <a class= "text" href="mailto: meghan.horton@example.com"> meghan.horton@example.com </a>
+                            <!-- es un correo ficticio -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloque_medio">
+            <h2>Experiencia laboral
+            </h2>
+                <h3>Google (2020-Presente)</h3>
+                <h4>Programador Full Stack</h4>
+                
+                <button type="button" id="mas_informacion1" onclick="mostrar1()">Más información
+                </button>
+                    <div id="informacion1" style="display:none;">
+                        <p>Encargada de desarrollar y controlar tanto el desarrollo front-end como el back-end
+                        de aplicaciones web.</p>
+                    </div>
+               
+                <h3>Coca-cola (2018-2020)</h3>
+                <h4>Programador jr.</h4>
+                <button type="button" id="mas_informacion2" onclick="mostrar2()">Más información</button>
+                    <div id="informacion2" style="display:none;">
+                        <p>Encargada de instalación, mantenimiento y funcionamiento de los recursos tecnológicos.</p>
+                    </div>
+            
+        </div>
+    
+        <div class="bloque_inf">
+            
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <h3>Argentina Programa (2022-Presente)</h3>
+                </li>
+                <p>Curso Full Stack</p>
+                <li>
+                    <h3>Universidad Nacional de Misiones (2008-2015)</h3>
+                </li>
+                <p>Ingeniería Industrial</p>
+            </ul>    
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>                 
+                
+            
+       
